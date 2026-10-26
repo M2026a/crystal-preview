@@ -1,0 +1,10 @@
+Crystal HP・LP：WordPress不要の静的版
+
+index.htmlがHP、coating/sedan.htmlとcoating/minivan.htmlがLPです。
+ZIPを解凍してindex.htmlを開くと確認できます。スマホ確認にはGitHub Pagesなどの仮設置先を使います。
+設置時はindex.html、CSS、JS、assets、coatingを相対位置を変えずにまとめて配置してください。
+GitHub PagesではリポジトリのSettings → Pagesで配置したブランチとフォルダを指定します。
+本番公開先はまだ未定です。全3ページにnoindex,nofollowを入れた確認用のため、本番公開時には解除し、実URLで正規URLとサイトマップ等を設定してください。
+WordPress、外部CMS、ログイン、サーバー契約は不要です。写真や文章を変える場合はファイルを編集して再アップロードします。
+相談切り替えは電話前の案内です。予約送信や自動診断はしません。お問い合わせは電話です。
+実際の来店や売上、検索順位を保証するものではありません。
