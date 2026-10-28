@@ -1,2 +1,2 @@
 # crystal-preview
-Crystal ホームページ確認用
+Crystal ホームページ確認用.
