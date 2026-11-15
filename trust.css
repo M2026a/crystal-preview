@@ -2,3 +2,9 @@
 .cr-trust-reasons article>p:last-child,.cr-consult-answer #cr-consult-description{font-size:15px}.cr-consult-caption,.cr-consult-note,.cr-consult-hours{font-size:13px}
 
 .cr-trust-photo img{aspect-ratio:4/3;object-fit:contain}
+
+/* Bring the spacious workshop proof forward and give it a leading share. */
+.cr-trust-story { grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr); }
+@media(max-width:600px){.cr-trust-story{grid-template-columns:1fr;}}
+
+@media(min-width:601px){.cr-trust-opening h2{font-size:clamp(28px,2.3vw,34px);line-height:1.55}}

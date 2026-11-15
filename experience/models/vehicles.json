@@ -1,0 +1,106 @@
+{
+  "kei": {
+    "id": "suzuki-carry",
+    "brand": "Suzuki",
+    "model": "Carry",
+    "years": [
+      1999,
+      2020
+    ],
+    "category": "minivan",
+    "file": "suzuki-carry.glb",
+    "bytes": 1351140,
+    "paint": {
+      "materials": [
+        "S_Boya"
+      ],
+      "textured": false,
+      "confidence": "alta"
+    },
+    "credit": {
+      "author": "ProPolyModels",
+      "authorUrl": "https://sketchfab.com/ProPolyModels",
+      "license": "CC Attribution",
+      "sourceName": "Suzuki Carry Minivan",
+      "sourceUrl": "https://sketchfab.com/3d-models/5c0007c0c6ed4d298b8c80646efa09d2"
+    }
+  },
+  "sedan": {
+    "id": "lexus-es",
+    "brand": "Lexus",
+    "model": "ES",
+    "years": [
+      2000,
+      2024
+    ],
+    "category": "sedan",
+    "file": "lexus-es.glb",
+    "bytes": 4004288,
+    "paint": {
+      "materials": [
+        "Meshpart1Mtl"
+      ],
+      "textured": false,
+      "confidence": "alta"
+    },
+    "credit": {
+      "author": "Mona x Supercars",
+      "authorUrl": "https://sketchfab.com/Car2022",
+      "license": "CC Attribution",
+      "sourceName": "Lexus ES Hybrid",
+      "sourceUrl": "https://sketchfab.com/3d-models/b4edfa2fd5cc48ada679352215e0105e"
+    }
+  },
+  "suv": {
+    "id": "toyota-corolla-cross",
+    "brand": "Toyota",
+    "model": "Corolla Cross",
+    "years": [
+      2000,
+      2024
+    ],
+    "category": "suv",
+    "file": "toyota-corolla-cross.glb",
+    "bytes": 902568,
+    "paint": {
+      "materials": [
+        "2020_Toyota_Corolla_Cross_Platinum_White_Pearl_Mica"
+      ],
+      "textured": false,
+      "confidence": "alta"
+    },
+    "credit": {
+      "author": "Nieve5677",
+      "authorUrl": "https://sketchfab.com/niev",
+      "license": "CC Attribution",
+      "sourceName": "Toyota Corolla Cross",
+      "sourceUrl": "https://sketchfab.com/3d-models/cc503d26ea694dce85e7d0f1491b0e30"
+    }
+  },
+  "minivan": {
+    "id": "kia-carnival",
+    "brand": "Kia",
+    "model": "Carnival",
+    "years": [
+      2000,
+      2024
+    ],
+    "category": "minivan",
+    "file": "kia-carnival.glb",
+    "bytes": 2292968,
+    "paint": {
+      "materials": [
+        "Meshescarnivalkcvl05411Mtl.003"
+      ],
+      "textured": false,
+      "confidence": "alta"
+    },
+    "credit": {
+      "author": "Doz3",
+      "authorUrl": "https://sketchfab.com/Doz3",
+      "license": "CC Attribution",
+      "sourceName": "Kia Carnival 2011",
+      "sourceUrl": "https://sketchfab.com/3d-models/855c464351f244cbaafa8269a5d472df"
+    }
+  }
+}

@@ -10,3 +10,5 @@
 .b3-life-example{max-width:900px;margin:30px 0;padding:20px 28px;border-left:2px solid #7896a5;background:#f2f5f5}.b3-life-example h3{margin:0 0 12px}.b3-life-example p{margin:10px 0}.b3-life-example .b3-annotation{font-size:13px}
 
 .b3-replay-bar{display:flex;justify-content:flex-end;padding:12px 6%;background:#eff3f4}.b3-replay-bar .b3-replay{position:relative;inset:auto;margin:0;z-index:1;width:auto;scroll-margin-top:110px}
+
+@media(max-width:600px){.b3-comparison .b-photo-open img{object-fit:cover;object-position:center}}

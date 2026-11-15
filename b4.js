@@ -4,7 +4,7 @@ const frames=[
  ['supra-landcruiser-private.png','cars-civic-workshop.png','スープラ・ランドクルーザー・シビック TYPE R','大切な一台は、人それぞれ。'],
  ['cars-alphard-black-bronze.png','cars-crown-hatch.png','アルファード・クラウン ほか','車種も、色も、こだわりも。'],
  ['body-polish.png','wheel-work.jpg','ボディ研磨 / ホイールコーティング 作業中','艶をつくる、細かな手仕事。'],
- ['headlight-film.png','moulding-film-work.jpg','ヘッドライト / モール フィルム施工中','きれいに整え、その先を守る。'],
+ ['headlight-protection-detail.jpg','moulding-film-work.jpg','ヘッドライト / モール フィルム施工中','きれいに整え、その先を守る。'],
  ['window-watercoat.png','wheel-off-car.jpg','窓の撥水コート / ホイールコーティング 作業中','窓から、足元まで。'],
  ['workshop-spacious-v13.png','cars-harrier-lexus.png','GLASS COATING / FILM / PROTECTION','まとめて相談。一台に合う施工を。']
 ];
