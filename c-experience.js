@@ -1,17 +1,19 @@
 (()=>{'use strict';
 const reduced=matchMedia('(prefers-reduced-motion: reduce)'),small=matchMedia('(max-width:700px)');
 const frames=[
-['shine','愛車の艶に、手仕事を。','ガラスコーティング / Crystal',2800],
+['supra','カーコーティングで、愛車に艶を。','スープラのガラスコーティング',2800],
+['film','カーフィルムで、車内を心地よく。','クラウンエステートの断熱フィルム施工',2600],
+['seat','シートコーティングで、触れる場所も大切に。','マセラティのシートコーティング',2600],
 ['polish','仕上がりは、下地から。','塗装の状態に向き合う、丁寧な磨き。',3000],
-['protect','ライトのきれいも、守る。','ヘッドライト・プロテクションフィルム',2600],
+['protect','大切なパーツを、きれいに守る。','ヘッドライトプロテクション',2600],
 ['wheel','ホイールまで、丁寧に。','ホイールコート',2200],
-['glass','雨の日の視界も、心地よく。','窓ガラスの撥水コート',2400],
-['cars','新車も、乗り続けたい一台も。','コーティングもフィルムも、まとめて相談。',2400],
+['glass','雨の日の視界も、心地よく。','ウインド撥水コート',2400],
+['cars','新車も、乗り続けたい一台も。','愛車に合わせた施工をご相談ください。',2400],
 ['listen','話を聞いて、施工を選ぶ。','保管場所・乗り方・これからのことまで。',3200],
 ['logo','施工のあとも、相談できる。','愛車を長くきれいに。Crystal',3000]
 ];
 let showing=null;
-const photoURL=key=>key==='logo'?'assets/crystal-logo.png':key==='protect'?'assets/headlight-protection-detail.jpg':'assets/intro/'+key+'-'+(small.matches?'mobile':'desktop')+'.webp';
+const customPhotos={supra:'assets/supra-glass-coating.jpg',film:'assets/service-photos/crown-estate-film-work.jpg',seat:'assets/service-photos/maserati-seat.jpg'};const photoURL=key=>customPhotos[key]||(key==='logo'?'assets/crystal-logo.png':key==='protect'?'assets/headlight-protection-detail.jpg':'assets/intro/'+key+'-'+(small.matches?'mobile':'desktop')+'.webp');
 const cache=new Map();function photo(key){const url=photoURL(key);if(!cache.has(url))cache.set(url,new Promise((res,rej)=>{const i=new Image();i.decoding='async';i.onload=()=>i.decode().then(()=>res(i)).catch(()=>res(i));i.onerror=rej;i.src=url}));return cache.get(url)}
 async function play(manual=false){if(showing)return;let firstPhoto;try{firstPhoto=await Promise.race([photo(frames[0][0]),new Promise((_,rej)=>setTimeout(()=>rej(Error('slow load')),manual?10000:10000))])}catch{return}if(showing)return;const previous=document.activeElement,d=document.createElement('dialog');d.className='c-opening';d.setAttribute('aria-label','Crystalの施工とお店の紹介。スキップできます');d.innerHTML='<div class="c-film-backdrop"></div><div class="c-film-photo"></div><div class="c-film-vignette"></div><div class="c-film-brand"><img src="assets/crystal-logo.png" width="1774" height="887" alt="Crystal — TOTAL BODY CARE / CARFILM &amp; COATING"></div><div class="c-film-caption"><span class="c-film-eyebrow"></span><p></p></div><button class="c-film-skip" type="button">スキップしてHPへ ↗</button><span class="c-film-count" aria-hidden="true"></span><div class="c-film-line" aria-hidden="true"></div>';
 let cancelled=false,timer,sceneTimer;const stopPending=()=>{clearTimeout(sceneTimer);clearTimeout(timer)};showing=d;document.body.append(d);const stage=d.querySelector('.c-film-photo'),copy=d.querySelector('.c-film-caption p'),sub=d.querySelector('.c-film-eyebrow');
