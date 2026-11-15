@@ -422,3 +422,51 @@ body { padding-top:0 !important; }
 /* D: keep a compact route back to the six service choices while scrolling. */
 @media(min-width:1001px){body.d-menu-open-visible .c-jump-open{display:block!important;position:fixed!important;z-index:1001;top:14px!important;right:18px!important;left:auto!important;bottom:auto!important;width:auto!important;min-height:42px!important;padding:9px 14px!important;border:1px solid #9db5bf;border-radius:3px;background:#f7fafb;color:#173743;box-shadow:0 3px 14px #10252f30;font-size:13px;font-weight:700}}
 @media(max-width:1000px){body.d-menu-open-visible .c-jump-open{display:block!important;position:fixed!important;z-index:1001;top:10px!important;right:10px!important;left:auto!important;bottom:auto!important;width:auto!important;min-height:38px!important;padding:8px 11px!important;border:1px solid #9db5bf;border-radius:3px;background:#f7fafb;color:#173743;box-shadow:0 3px 14px #10252f30;font-size:12px;font-weight:700}}
+/* Match the Crown Estate photo frame to the other service thumbnails. */
+#car-film .crown-film-gallery { grid-template-columns:repeat(3,minmax(0,1fr)) !important; width:100%; max-width:none !important; gap:16px !important; }
+#car-film .crown-film-gallery .b-photo-open { width:100%; aspect-ratio:4/3 !important; }
+#car-film .crown-film-gallery .b-photo-open img { display:block; width:100%; height:100% !important; aspect-ratio:auto !important; object-fit:contain !important; }
+@media(max-width:1000px){#car-film .crown-film-gallery{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:12px !important;}}
+@media(max-width:700px){#car-film .crown-film-gallery{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:10px !important;}}
+
+
+/* Third moulding item: pinpoint before/after comparison crops. */
+#service .moulding-compare-pair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:6px; }
+#service .moulding-compare-pair .b-photo-open { position:relative; aspect-ratio:4/3 !important; }
+#service .moulding-compare-pair .b-photo-open img { object-fit:cover !important; }
+#service .moulding-compare-pair .b-photo-open::before { position:absolute; z-index:1; top:6px; left:6px; padding:2px 6px; background:#173743e8; color:#fff; font-size:11px; font-weight:700; }
+#service .moulding-compare-pair .b-photo-open:first-child::before { content:"施工前"; }
+#service .moulding-compare-pair .b-photo-open:last-child::before { content:"施工後"; }
+@media (max-width:1000px) { #service .moulding-compare { grid-column:span 2; } #service .moulding-compare-pair { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:600px) { #service .moulding-compare { grid-column:span 2; } #service .moulding-compare-pair { gap:8px; } }
+
+
+/* Keep all three moulding items aligned to the same card width. */
+@media (min-width:1001px) {
+ #service .moulding-photos { grid-template-columns:repeat(3,minmax(0,1fr)) !important; gap:14px; align-items:start; }
+}
+#service .moulding-compare-pair .b-photo-open img { aspect-ratio:4/3 !important; object-fit:cover !important; }
+#service .moulding-compare { min-width:0; }
+
+/* Stack close-up moulding comparison vertically inside the enlarged third card. */
+#service .moulding-compare-stack { grid-template-columns:1fr; gap:8px; }
+#service .moulding-compare-stack .b-photo-open { aspect-ratio: 2.4 / 1 !important; }
+#service .moulding-compare-stack .b-photo-open img { aspect-ratio:2.4 / 1 !important; object-fit:cover !important; }
+
+/* Equal card widths, same 4:3 photo windows, and vertical comparison only. */
+#service .moulding-photos { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)) !important; width:100%; max-width:none !important; gap:14px; }
+#service .moulding-photos > figure { width:100%; min-width:0; }
+#service .moulding-compare-stack { display:grid; grid-template-columns:1fr; gap:8px; }
+#service .moulding-compare-stack .b-photo-open { aspect-ratio:2.4/1 !important; }
+#service .moulding-compare-stack .b-photo-open img { width:100%; height:100% !important; aspect-ratio:auto !important; object-fit:cover !important; }
+@media(max-width:1000px){#service .moulding-photos{grid-template-columns:repeat(2,minmax(0,1fr)) !important;}}
+
+/* Tighten the portrait chrome-trim thumbnail: fill the frame and trim slightly from the bottom. */
+#service .moulding-process-photos figure:first-child .b-photo-open img { object-fit:cover !important; object-position:50% 0% !important; }
+
+/* Crop the portrait close-up to the marked chrome area; the + control still opens the full original. */
+#service .moulding-process-photos figure:first-child .b-photo-open img { object-fit:cover !important; object-position:50% 42% !important; }
+
+/* Match the compact wide before/after crop ratio. */
+#service .moulding-compare-stack .b-photo-open { aspect-ratio:2.4/1 !important; }
+#service .moulding-compare-stack .b-photo-open img { width:100%; height:100% !important; aspect-ratio:auto !important; object-fit:cover !important; }
